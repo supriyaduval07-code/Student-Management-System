@@ -14,7 +14,9 @@ document.getElementById("studentForm").addEventListener("submit", function(event
             <p><strong>USN:</strong> ${usn}</p>
             <p><strong>Branch:</strong> ${branch}</p>
             <p><strong>Semester:</strong> ${semester}</p>
-            <hr>
+        <button onclick="this.parentElement.remove()">Delete 🗑️</button>
+<button onclick="editStudent(this)">Edit ✏️</button>
+         <hr>
         </div>
     `;
 
