@@ -13,7 +13,19 @@
     <p>Manage student information and academic details.</p>
 
     <h2>Dashboard</h2>
+<h3>Add Student</h3>
 
+<form id="studentForm">
+    <input type="text" id="studentName" placeholder="Student Name" required>
+    <input type="text" id="studentUSN" placeholder="USN" required>
+    <input type="text" id="studentBranch" placeholder="Branch" required>
+    <input type="number" id="studentSemester" placeholder="Semester" required>
+
+    <button type="submit">Add Student</button>
+</form>
+
+<h3>Student List</h3>
+<div id="studentList"></div>
     <p>Total Students: 0</p>
     <p>Total Courses: 0</p>
 
