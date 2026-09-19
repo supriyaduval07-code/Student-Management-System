@@ -36,3 +36,18 @@ document.getElementById("searchStudent").addEventListener("input", function() {
         }
     });
 });
+function editStudent(button) {
+    let student = button.parentElement;
+
+    let name = student.querySelector("p:nth-child(1)").textContent.replace("Name:", "").trim();
+    let usn = student.querySelector("p:nth-child(2)").textContent.replace("USN:", "").trim();
+    let branch = student.querySelector("p:nth-child(3)").textContent.replace("Branch:", "").trim();
+    let semester = student.querySelector("p:nth-child(4)").textContent.replace("Semester:", "").trim();
+
+    document.getElementById("studentName").value = name;
+    document.getElementById("studentUSN").value = usn;
+    document.getElementById("studentBranch").value = branch;
+    document.getElementById("studentSemester").value = semester;
+
+    student.remove();
+}
